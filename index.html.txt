@@ -1,0 +1,59 @@
+package example;
+
+import java.util.Scanner;
+
+public class example {
+
+	    public static void main(String[] args) {
+	   
+	    	        Scanner sc = new Scanner(System.in);
+	    	        int passedCount = 0;
+	    	        String failedLessons = "";
+
+	    	        System.out.print("Enter Student Name: ");
+	    	        String name = sc.nextLine();
+
+	    	        // وانەی یەکەم
+	    	        System.out.print("Enter Grade for Lesson 1: ");
+	    	        int g1 = sc.nextInt();
+	    	        if (g1 >= 50) { 
+	    	            System.out.println("Lesson 1: Pass"); 
+	    	            passedCount++; 
+	    	        } else { 
+	    	            System.out.println("Lesson 1: Fail"); // 
+	    	            failedLessons += "Lesson 1 "; 
+	    	        }
+
+	    	        // وانەی دووەم
+	    	        System.out.print("Enter Grade for Lesson 2: ");
+	    	        int g2 = sc.nextInt();
+	    	        if (g2 >= 50) { 
+	    	            System.out.println("Lesson 2: Pass"); 
+	    	            passedCount++; 
+	    	        } else { 
+	    	            System.out.println("Lesson 2: Fail"); 
+	    	            failedLessons += "Lesson 2 "; 
+	    	        }
+
+	    	        // وانەی سێیەم
+	    	        System.out.print("Enter Grade for Lesson 3: ");
+	    	        int g3 = sc.nextInt();
+	    	        if (g3 >= 50) { 
+	    	            System.out.println("Lesson 3: Pass"); 
+	    	            passedCount++; 
+	    	        } else { 
+	    	            System.out.println("Lesson 3: Fail"); 
+	    	            failedLessons += "Lesson 3 "; 
+	    	        }
+
+	    	     
+	    	        System.out.println("\n--- Final Result ---");
+	    	        System.out.println("Total Passed: " + passedCount);
+	    	        
+	    	        if (failedLessons.isEmpty()) { // 
+	    	            System.out.println("Failed Lessons: None");
+	    	        } else {
+	    	            System.out.println("Failed Lessons: " + failedLessons);
+	    	        }
+	    	        }}
+	    	
